@@ -35,3 +35,5 @@ script that copies all the HTML files from the current working directory to the 
 move all files beginning with an uppercase letter to the directory `/tmp/u`
 ## 16-clean_emacs
 delete all files in the current working directory that end with the character `~`
+## 17-tree
+create  the directories `welcome/`, `welcome/to/` and `welcome/to/school` in the current directory with  parent direcories if needed
