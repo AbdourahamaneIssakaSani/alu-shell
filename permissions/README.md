@@ -34,3 +34,7 @@ change the group owner to `school` for the file `hello` :
 - The file `hello` will be in the working directory
 ## 14-change_owner_and_group
 change the owner to `vincent` and the group owner to `staff` for all the files and directories in the working directory
+## 15-symbolic_link_permissions
+change the owner and the group owner of `_hello` to vincent and staff respectively: 
+- The file `_hello` is in the working directory
+- The file `_hello` is a symbolic link
