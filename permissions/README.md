@@ -38,3 +38,5 @@ change the owner to `vincent` and the group owner to `staff` for all the files a
 change the owner and the group owner of `_hello` to vincent and staff respectively: 
 - The file `_hello` is in the working directory
 - The file `_hello` is a symbolic link
+## 16-if_only
+change the owner of the file `hello` to `vincent` only if it is owned by the user `guillaume`
