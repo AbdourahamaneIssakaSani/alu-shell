@@ -32,3 +32,5 @@ create a directory called `my_dir` with permissions *751* in the working directo
 ## 13-change_group
 change the group owner to `school` for the file `hello` :
 - The file `hello` will be in the working directory
+## 14-change_owner_and_group
+change the owner to `vincent` and the group owner to `staff` for all the files and directories in the working directory
