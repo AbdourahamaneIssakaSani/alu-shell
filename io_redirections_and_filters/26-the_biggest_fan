@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -n+2 |sort | uniq -c | sort -rn | cut -f 1 | uniq -c | head -n 10 | sort -rn | tr -d "[:digit:]"
+tail -n +2 | sort | cut -f 1 | uniq -c | sort -gr | head -n 11 | tr -s ' ' | cut -d ' ' -f 3
