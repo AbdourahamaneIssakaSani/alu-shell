@@ -1,0 +1,2 @@
+#!/bin/bash
+find ./* -empty | xargs ls -a1R | rev | cut -d "/" -f 1 | rev
