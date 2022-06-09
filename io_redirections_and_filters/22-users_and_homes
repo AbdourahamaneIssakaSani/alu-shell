@@ -1,0 +1,2 @@
+#!/bin/nash
+cut -d ":" -f 5,6
