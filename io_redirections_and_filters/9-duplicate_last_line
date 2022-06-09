@@ -1,0 +1,2 @@
+#!/bin/nash
+tail -n 1 iacta | xargs echo >> iacta
