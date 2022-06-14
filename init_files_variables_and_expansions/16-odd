@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1 | paste - - | tr -d "\t"
+ls -1 | paste - - | cut -d "\t" -f 1
