@@ -3,4 +3,4 @@
 # See example
 # You must use awk
 
-awk '{ print $1 $9}' apache-access.log | uniq -c | sort -rn
+awk '{print $1,$9}  apache-access.log | sort -V| uniq -c | sort -n | perl -e 'print reverse <>'
