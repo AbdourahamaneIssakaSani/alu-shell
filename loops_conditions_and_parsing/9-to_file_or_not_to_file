@@ -5,7 +5,7 @@ exist=0
 for file in *; do
     if [ "$file" == "school" ]
 	then
-	let exist=1
+	exist=1
 	echo "school file exists"
 	if [ -s "$file" ]
 	    then
