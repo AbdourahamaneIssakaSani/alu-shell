@@ -22,12 +22,15 @@ if [ exist ]
 	then
 		echo "school file exists"
 		exist=true
+fi
+
 if [ !isEmpty ]
     then
     echo "school file is not empty"
 else
     echo "school file is empty"
 fi
+
 if [ isFile ]
     then
     echo "school is a regular file"
