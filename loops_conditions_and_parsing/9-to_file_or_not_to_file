@@ -3,7 +3,7 @@
 
 for file in *
 do
-    if [ "$file" == "shool" ]
+    if [ "$file" == "school" ]
 	then
 		echo "school file exists"
 	if [ -s "$file" ]
