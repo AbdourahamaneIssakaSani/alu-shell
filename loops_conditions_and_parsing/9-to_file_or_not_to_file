@@ -20,15 +20,15 @@ done
 
 if [ exist ]
 	then
-		echo "school file exists"
-		exist=true
+	echo "school file exists"
+	exist=true
 fi
 
-if [ !isEmpty ]
+if [ isEmpty ]
     then
-    echo "school file is not empty"
-else
     echo "school file is empty"
+else
+    echo "school file is not empty"
 fi
 
 if [ isFile ]
