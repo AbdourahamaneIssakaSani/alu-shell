@@ -2,8 +2,9 @@
 # IFS
 
 
-IFS=:
-while read -r line
+
+while read -ar line
 do
-	echo "The user $line[0] is part of the GROUP_ID gang, lives in HOME_DIRECTORY and rides COMMAND/SHELL. USER ID's place is protected by the passcode PASSWORD, more info about the user here: USER ID INFO"
+IFS=':'
+echo "The user ${line[0]} is part of the ${line[3]} gang, lives in ${line[5]} and rides ${line[6]}. ${line[2]}'s place is protected by the passcode ${line[1]}, more info about the user here: ${line[4]}"
 done < /etc/passwd
