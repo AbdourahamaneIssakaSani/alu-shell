@@ -10,4 +10,4 @@
 # See example
 # You must use awk
 # You are not allowed to use while, for, until and cut
-awk '{print $1, $9}' | uniq -c | sort -gr
+awk '{print $1, $9}' | sort | uniq -c
