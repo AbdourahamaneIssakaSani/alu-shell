@@ -3,7 +3,7 @@
 # In a list format
 # Where only the part of the name after the first dash is displayed
 
-for file in `ls -1` 
+for file in $(ls -1) 
 do
-	echo file | cut -d "-" -f2
+	echo $file | cut -d "-" -f2
 done
