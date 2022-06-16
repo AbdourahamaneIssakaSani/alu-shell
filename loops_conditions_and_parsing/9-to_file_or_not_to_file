@@ -22,11 +22,11 @@ if $exist
 	then
 	echo "school file exists"
 
-	if ! $isEmpty
+	if $isEmpty
 	    then
-	    echo "school file is empty"
-	else
 	    echo "school file is not empty"
+	else
+	    echo "school file is empty"
 	fi
 
 	if $isFile
