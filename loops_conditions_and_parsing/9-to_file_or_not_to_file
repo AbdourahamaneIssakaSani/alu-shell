@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # gives you information about the school file.
 
-for file in *
-do
+for file in *; do
     if [ "$file" == "school" ]
 	then
 		echo "school file exists"
@@ -18,6 +17,5 @@ do
 	fi
     else
 	echo "school file does not exist"
-    	break
     fi
 done
