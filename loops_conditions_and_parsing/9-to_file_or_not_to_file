@@ -18,5 +18,6 @@ do
 	fi
     else
 	echo "school file does not exist"
+    	break
     fi
 done
