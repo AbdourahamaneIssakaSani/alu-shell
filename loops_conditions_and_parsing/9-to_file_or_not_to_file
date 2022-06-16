@@ -22,7 +22,7 @@ if [ $exist ]
 	then
 	echo "school file exists"
 
-	if [ $isEmpty ]
+	if [ !$isEmpty ]
 	    then
 	    echo "school file is empty"
 	else
