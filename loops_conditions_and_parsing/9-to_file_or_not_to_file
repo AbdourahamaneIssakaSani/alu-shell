@@ -18,18 +18,18 @@ for file in *; do
     fi
 done
 
-if [ $exist ]
+if $exist
 	then
 	echo "school file exists"
 
-	if [ !$isEmpty ]
+	if !$isEmpty
 	    then
 	    echo "school file is empty"
 	else
 	    echo "school file is not empty"
 	fi
 
-	if [ $isFile ]
+	if $isFile
 	    then
 	    echo "school is a regular file"
 	fi
