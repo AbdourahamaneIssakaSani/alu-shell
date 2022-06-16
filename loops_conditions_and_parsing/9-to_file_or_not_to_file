@@ -6,32 +6,32 @@ isFile=false
 for file in *; do
     if [ "$file" == "school" ]
 	then
-	exist=true
+	$exist=true
 	if [ -s "$file" ]
 	    then
-	    isEmpty=false
+	    $isEmpty=false
 	fi
 	if [ -f "$file" ]
 	    then
-	    isFile=true
+	    $isFile=true
 	fi
     fi
 done
 
-if [ exist ]
+if [ $exist ]
 	then
 	echo "school file exists"
 	exist=true
 fi
 
-if [ isEmpty ]
+if [ $isEmpty ]
     then
     echo "school file is empty"
 else
     echo "school file is not empty"
 fi
 
-if [ isFile ]
+if [ $isFile ]
     then
     echo "school is a regular file"
 else
