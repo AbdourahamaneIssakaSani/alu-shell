@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#only display:
+
+# username
+# user id
+# Home directory path for the user 
+i=0
+usr="$(cat /etc/password)"
+len=${#usr[@]}
+while [ $i -lt "$len" ]
+do
+    echo "${usr[$i]}" | cut -d ":" -f 1,4,6
+done
