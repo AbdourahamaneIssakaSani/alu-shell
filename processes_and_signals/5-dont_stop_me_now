@@ -3,4 +3,4 @@
 # Requirements:
 
 # You must use kill
-pgrep 4-to_infinity_and_beyond | xargs kill
+pgrep ./4-to_infinity_and_beyond | xargs kill
