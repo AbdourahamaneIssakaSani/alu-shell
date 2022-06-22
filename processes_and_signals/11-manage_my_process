@@ -5,13 +5,13 @@ start_action() {
 	# starts manage_my_process in the background		
 	./manage_my_process &
 	# creates /var/run/my_process.pid with its PID inside
-	echo $$>/var/run/my_process.pid
+	echo $!>/var/run/my_process.pid
 }
 stop_action() {
     	kill manage_my_process	
 	pkill -f ./manage_my_process
 	# delete /var/run/my_process.pid with force option and sudo to make sure it’s deleted
-	while [ -e "/var/run/my_process.pid" ]; do sudo rm /var/run/my_process.pid; done
+	sudo rm /var/run/my_process.pid
 }
 
 case "$1" in
