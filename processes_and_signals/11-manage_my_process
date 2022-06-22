@@ -14,7 +14,7 @@ case "$1" in
 	# kill manage_my_process	
 	pkill -f ./manage_my_process
 	# delete /var/run/my_process.pid with force option and sudo to make sure it’s deleted
-	sudo rm -f /var/run/my_process.pid
+	sudo rm /var/run/my_process.pid
 	# then display it has been stopped
 	echo "manage_my_process stopped"
 	;;
@@ -23,7 +23,7 @@ case "$1" in
 	# stops manage_my_process
 	pkill -f ./manage_my_process
 	# deletes /var/run/my_process.pid
-	sudo rm -f /var/run/my_process.pid
+	sudo rm /var/run/my_process.pid
 	# starts manage_my_process : start and stop should be refactored to functions
 	./manage_my_process &
 	# creates /var/run/my_process.pid with its PID inside
