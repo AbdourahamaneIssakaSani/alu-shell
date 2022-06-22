@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # manages manage_my_process
 
-PATH="/sbin:/bin:/usr/sbin:/usr/bin" #Ne pas toucher
+#PATH="/sbin:/bin:/usr/sbin:/usr/bin" #Ne pas toucher
 
-PROCESS=./manage_my_process
+PROCESS="manage_my_process"
 PIDFILE=/var/run/my_process.pid
 start_action() {
-    start-stop-daemon -S -b --pid-file $PIDFILE --make-pidfile --exec $PROCESS
+    start-stop-daemon -S -b --pidfile $PIDFILE --make-pidfile --exec $PROCESS
 }
 stop_action() {
     start-stop-daemon -K -n $PROCESS --remove-pidfile
