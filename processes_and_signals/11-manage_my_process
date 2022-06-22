@@ -4,7 +4,7 @@
 PROCESS=manage_my_process
 PIDFILE=/var/run/my_process.pid
 start_action() {
-    start-stop-daemon -S -a \/bin/bash -- -c exec $PROCESS -b --pid-file $PIDFILE
+    start-stop-daemon -S -a '\/bin/bash' -- -c exec $PROCESS -b --pid-file $PIDFILE
 }
 stop_action() {
     start-stop-daemon -K -n $PROCESS --remove-pidfile
