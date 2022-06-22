@@ -12,9 +12,9 @@ case "$1" in
 	
 	stop)
 	# kill manage_my_process	
-	pgrep -f ./manage_my_process | xargs kill
+	pkill -f ./manage_my_process
 	# delete /var/run/my_process.pid with force option to make sure it’s deleted
-	sudo rm -f /var/run/my_process.pid 
+	sudo rm -f /var/run/my_process.pid
 	# then display it has been stopped
 	echo "manage_my_process stopped"
 	;;
