@@ -2,7 +2,6 @@
 # manages manage_my_process
 
 start_action() {
-   start)
 	# starts manage_my_process in the background		
 	./manage_my_process &
 	# creates /var/run/my_process.pid with its PID inside
