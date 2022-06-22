@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # manages manage_my_process
 
-PROCESS=./manage_my_process
+PROCESS=manage_my_process
 start_action() {
     start-stop-daemon -S -a $PROCESS -b --pid-file /var/run/my_process.pid
 }
