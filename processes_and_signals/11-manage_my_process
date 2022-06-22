@@ -1,15 +1,18 @@
 #!/usr/bin/env bash
 # manages manage_my_process
 
-#PATH="/sbin:/bin:/usr/sbin:/usr/bin" #Ne pas toucher
-
-PROCESS="manage_my_process"
-PIDFILE=/var/run/my_process.pid
 start_action() {
-    start-stop-daemon -S -b --pidfile $PIDFILE --make-pidfile --exec $PROCESS
+   start)
+	# starts manage_my_process in the background		
+	./manage_my_process &
+	# creates /var/run/my_process.pid with its PID inside
+	echo $$>/var/run/my_process.pid
 }
 stop_action() {
-    start-stop-daemon -K -n $PROCESS --remove-pidfile
+    	kill manage_my_process	
+	pkill -f ./manage_my_process
+	# delete /var/run/my_process.pid with force option and sudo to make sure it’s deleted
+	while [ -e "/var/run/my_process.pid" ]; do sudo rm /var/run/my_process.pid; done
 }
 
 case "$1" in
